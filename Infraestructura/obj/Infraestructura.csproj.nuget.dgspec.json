@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj": {}
+    "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj": {}
   },
   "projects": {
-    "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj": {
+    "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj",
+        "projectUniqueName": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj",
         "projectName": "Infraestructura",
-        "projectPath": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj",
+        "projectPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj",
         "packagesPath": "C:\\Users\\norma\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\obj\\",
+        "outputPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\norma\\AppData\\Roaming\\NuGet\\NuGet.Config",

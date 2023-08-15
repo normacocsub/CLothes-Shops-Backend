@@ -5161,11 +5161,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Datos\\Datos.csproj",
+      "projectUniqueName": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Datos\\Datos.csproj",
       "projectName": "Datos",
-      "projectPath": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Datos\\Datos.csproj",
+      "projectPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Datos\\Datos.csproj",
       "packagesPath": "C:\\Users\\norma\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Datos\\obj\\",
+      "outputPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\norma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5182,11 +5182,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Entity\\Entity.csproj": {
-              "projectPath": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Entity\\Entity.csproj"
+            "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Entity\\Entity.csproj"
             },
-            "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj": {
-              "projectPath": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj"
+            "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj": {
+              "projectPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj"
             }
           }
         }

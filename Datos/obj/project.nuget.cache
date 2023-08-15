@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZPNi5guSbX1FNonLjsl90W2KS956crQNKq46XveXUd0qANf5IypcRVslFu+mFgrUPxOsVZRSaWnuiOKSFOPypA==",
+  "dgSpecHash": "FeQrrHyF6Zw8FFZS0cr/PqaturtnjN0uk5IrjCURp7cQ0htBHLVCOODjmizxvmVQnm7RcbC99n2S6fz9TvAcBA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Datos\\Datos.csproj",
+  "projectFilePath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Datos\\Datos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\norma\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\norma\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
