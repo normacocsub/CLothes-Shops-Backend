@@ -41,16 +41,7 @@ public class ProductoController : ControllerBase
         }
         return BadRequest();
     }
-    [HttpGet("Proveedores")]
-    public ActionResult<List<Producto>> ConsultarProductosProveedor ([FromQuery] string correo)
-    {
-        var response = _producto.ConsultarProductosProveedores(correo);
-        if (response is null)
-        {
-            return BadRequest();
-        }
-        return Ok(response);
-    }
+
 
     [HttpGet("Buscar")]
     public ActionResult<Producto> ConsultarProducto([FromQuery] string codigo)
@@ -73,7 +64,7 @@ public class ProductoController : ControllerBase
             Stock = productoDto.Stock,
             Precio = productoDto.Precio,
             UrlImagen = "",
-            UsuarioId = productoDto.UsuarioId
+            ProveedorId = productoDto.ProveedorId
         };
     }
 }

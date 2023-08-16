@@ -11,6 +11,6 @@ public interface IClothesContext
     public DbSet<Producto> Productos { get; }
     public DbSet<Rol> Roles { get; }
     public DbSet<Usuario> Usuarios { get; }
-
+    public DbSet<Proveedor> Proveedors { get; }
     int SaveChanges();
 }

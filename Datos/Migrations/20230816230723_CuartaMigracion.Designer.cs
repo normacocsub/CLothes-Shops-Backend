@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Datos.Migrations
 {
     [DbContext(typeof(ClothesContext))]
-    [Migration("20230726043217_PrimeraMigracion")]
-    partial class PrimeraMigracion
+    [Migration("20230816230723_CuartaMigracion")]
+    partial class CuartaMigracion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -157,6 +157,10 @@ namespace Datos.Migrations
                     b.Property<decimal>("Precio")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("ProveedorId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Stock")
                         .HasColumnType("int");
 
@@ -169,6 +173,38 @@ namespace Datos.Migrations
                     b.HasIndex("CategoriaId");
 
                     b.ToTable("Producto");
+                });
+
+            modelBuilder.Entity("Entity.Proveedor", b =>
+                {
+                    b.Property<string>("NIT")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ciudad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Correo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Direccion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NIT");
+
+                    b.ToTable("Proveedor");
                 });
 
             modelBuilder.Entity("Entity.Rol", b =>
@@ -195,11 +231,6 @@ namespace Datos.Migrations
                         },
                         new
                         {
-                            Codigo = 2,
-                            Nombre = "Proveedor"
-                        },
-                        new
-                        {
                             Codigo = 3,
                             Nombre = "Cliente"
                         });
@@ -219,14 +250,9 @@ namespace Datos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Ciudad")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Direccion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Genero")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -238,13 +264,32 @@ namespace Datos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("RolId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Telefono")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Correo");
 
+                    b.HasIndex("RolId");
+
                     b.ToTable("Usuario");
+
+                    b.HasData(
+                        new
+                        {
+                            Correo = "admin123@gmail.com",
+                            Apellido = "",
+                            Cedula = "",
+                            Ciudad = "",
+                            Direccion = "",
+                            HashPassword = "CD0FD917F8A83A248614BCE69172839D2E06F30D77C6ADBD9DBD693DF6184ABE",
+                            Nombre = "",
+                            RolId = 1,
+                            Telefono = ""
+                        });
                 });
 
             modelBuilder.Entity("Entity.DetalleFactura", b =>
@@ -282,6 +327,17 @@ namespace Datos.Migrations
                         .IsRequired();
 
                     b.Navigation("Categoria");
+                });
+
+            modelBuilder.Entity("Entity.Usuario", b =>
+                {
+                    b.HasOne("Entity.Rol", "Rol")
+                        .WithMany()
+                        .HasForeignKey("RolId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Rol");
                 });
 
             modelBuilder.Entity("Entity.Factura", b =>

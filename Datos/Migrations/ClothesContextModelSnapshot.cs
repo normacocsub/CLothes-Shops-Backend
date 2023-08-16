@@ -154,6 +154,10 @@ namespace Datos.Migrations
                     b.Property<decimal>("Precio")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("ProveedorId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Stock")
                         .HasColumnType("int");
 
@@ -161,17 +165,43 @@ namespace Datos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UsuarioId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Codigo");
 
                     b.HasIndex("CategoriaId");
 
-                    b.HasIndex("UsuarioId");
-
                     b.ToTable("Producto");
+                });
+
+            modelBuilder.Entity("Entity.Proveedor", b =>
+                {
+                    b.Property<string>("NIT")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ciudad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Correo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Direccion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NIT");
+
+                    b.ToTable("Proveedor");
                 });
 
             modelBuilder.Entity("Entity.Rol", b =>
@@ -198,11 +228,6 @@ namespace Datos.Migrations
                         },
                         new
                         {
-                            Codigo = 2,
-                            Nombre = "Proveedor"
-                        },
-                        new
-                        {
                             Codigo = 3,
                             Nombre = "Cliente"
                         });
@@ -225,10 +250,6 @@ namespace Datos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Direccion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Genero")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -261,7 +282,6 @@ namespace Datos.Migrations
                             Cedula = "",
                             Ciudad = "",
                             Direccion = "",
-                            Genero = "",
                             HashPassword = "CD0FD917F8A83A248614BCE69172839D2E06F30D77C6ADBD9DBD693DF6184ABE",
                             Nombre = "",
                             RolId = 1,
@@ -303,15 +323,7 @@ namespace Datos.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Entity.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Categoria");
-
-                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Entity.Usuario", b =>

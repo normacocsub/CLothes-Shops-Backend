@@ -41,17 +41,7 @@ public class ProductoService : IProductoService
         }
     }
 
-    public List<Producto> ConsultarProductosProveedores(string correo)
-    {
-        try
-        {
-            return _context.Productos.Include(producto => producto.Usuario).Where( producto => producto.Usuario.Correo == correo ).ToList();
-        }
-        catch (Exception ex)
-        {
-            return null;
-        }
-    }
+    
 
     public Producto ConsultarProducto(int id)
     {

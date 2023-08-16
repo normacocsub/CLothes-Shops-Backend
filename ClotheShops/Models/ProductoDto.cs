@@ -8,5 +8,5 @@ public class ProductoDto
     public decimal Precio { get; set; }
     public string Descripcion { get; set; }
     public IFormFile Foto { get; set; }
-    public string UsuarioId { get; set; }
+    public string ProveedorId { get; set; }
 }

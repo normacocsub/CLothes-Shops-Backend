@@ -16,7 +16,5 @@ public class Producto
     [ForeignKey("Categoria")]
     public required int CategoriaId { get; set; }
     public Categoria? Categoria { get; set; }
-    [ForeignKey("Usuario")]
-    public required string UsuarioId { get; set; }
-    public Usuario Usuario { get; set; }
+    public required string ProveedorId { get; set; }
 }

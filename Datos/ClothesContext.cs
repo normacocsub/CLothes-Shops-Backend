@@ -16,6 +16,7 @@ public class ClothesContext : DbContext, IClothesContext
     public DbSet<DetalleFactura> Detalles { get; set; }
     public DbSet<Factura> Facturas { get; set; }
     public DbSet<Producto> Productos { get; set; }
+    public DbSet<Proveedor> Proveedors { get; set; }
     public DbSet<Usuario> Usuarios { get; set; }
 
     DbSet<Rol> IClothesContext.Roles => Roles;
@@ -24,6 +25,7 @@ public class ClothesContext : DbContext, IClothesContext
     DbSet<Factura> IClothesContext.Facturas => Facturas;
     DbSet<Producto> IClothesContext.Productos => Productos;
     DbSet<Usuario> IClothesContext.Usuarios => Usuarios;
+    DbSet<Proveedor> IClothesContext.Proveedors => Proveedors;
 
     public override int SaveChanges()
     {
@@ -31,6 +33,10 @@ public class ClothesContext : DbContext, IClothesContext
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+
+        modelBuilder.Entity<Proveedor>()
+                .HasKey(p => p.NIT);
+
         modelBuilder.Entity<Categoria>().HasData(
             new Categoria() { Codigo = 1, Nombre = "Camisas" },
             new Categoria() { Codigo = 2,  Nombre = "Chaquetas" },
@@ -42,7 +48,6 @@ public class ClothesContext : DbContext, IClothesContext
 
         modelBuilder.Entity<Rol>().HasData(
             new Rol() { Codigo = 1, Nombre = "Administrador"},
-            new Rol() { Codigo = 2, Nombre = "Proveedor"},
             new Rol() { Codigo = 3, Nombre = "Cliente"}
         );
 
@@ -53,7 +58,6 @@ public class ClothesContext : DbContext, IClothesContext
                 Ciudad = "",
                 Correo = "admin123@gmail.com",
                 Direccion = "",
-                Genero = "",
                 HashPassword = Password.GenerateHash("Hola123*"),
                 Nombre = "",
                 RolId = 1,

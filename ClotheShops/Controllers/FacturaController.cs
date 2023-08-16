@@ -59,7 +59,6 @@ namespace ClotheShops.Controllers
                 Cedula = "",
                 Ciudad = "",
                 Direccion = "",
-                Genero = "",
                 HashPassword = "",
                 Nombre = "",
                 RolId = 0,
@@ -77,7 +76,7 @@ namespace ClotheShops.Controllers
                     Precio = item.Producto.Precio,
                     CategoriaId = item.Producto.CategoriaId,
                     UrlImagen = item.Producto.UrlImagen,
-                    UsuarioId = item.Producto.UsuarioId,
+                    ProveedorId = item.Producto.ProveedorId,
                 };
                 detalles.Add(new DetalleFactura()
                 {

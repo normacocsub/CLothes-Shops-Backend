@@ -1,5 +1,6 @@
 using Datos;
 using Logica;
+using Logica.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -27,7 +28,9 @@ public class Startup
             services.AddScoped<IFacturaService, FacturaService>();
             services.AddScoped<IProductoService, ProductoService>();
             services.AddScoped<IUsuarioService, UsuarioService>();
+            services.AddScoped<IProovedorService, ProveedorService>();
             services.AddScoped<IClothesContext, ClothesContext>();
+            
 
             services.AddCors();
 

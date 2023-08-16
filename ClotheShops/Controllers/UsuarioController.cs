@@ -61,7 +61,6 @@ namespace ClotheShops.Controllers
                 Correo = input.Correo,
                 HashPassword = input.Password,
                 RolId = input.RolId,
-                Genero = input.Genero,
                 Telefono = input.Telefono,  
                 Ciudad = input.Ciudad
             };

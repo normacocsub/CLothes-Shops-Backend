@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Datos.Migrations
 {
     /// <inheritdoc />
-    public partial class PrimeraMigracion : Migration
+    public partial class CuartaMigracion : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -27,6 +27,23 @@ namespace Datos.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Proveedor",
+                columns: table => new
+                {
+                    NIT = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Correo = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Apellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Proveedor", x => x.NIT);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Rol",
                 columns: table => new
                 {
@@ -40,25 +57,6 @@ namespace Datos.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Usuario",
-                columns: table => new
-                {
-                    Correo = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Cedula = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Apellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Genero = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    HashPassword = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Usuario", x => x.Correo);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Producto",
                 columns: table => new
                 {
@@ -69,7 +67,8 @@ namespace Datos.Migrations
                     Stock = table.Column<int>(type: "int", nullable: false),
                     Precio = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     UrlImagen = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CategoriaId = table.Column<int>(type: "int", nullable: false)
+                    CategoriaId = table.Column<int>(type: "int", nullable: false),
+                    ProveedorId = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -78,6 +77,31 @@ namespace Datos.Migrations
                         name: "FK_Producto_Categoria_CategoriaId",
                         column: x => x.CategoriaId,
                         principalTable: "Categoria",
+                        principalColumn: "Codigo",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Usuario",
+                columns: table => new
+                {
+                    Correo = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Cedula = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    HashPassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RolId = table.Column<int>(type: "int", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Apellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Usuario", x => x.Correo);
+                    table.ForeignKey(
+                        name: "FK_Usuario_Rol_RolId",
+                        column: x => x.RolId,
+                        principalTable: "Rol",
                         principalColumn: "Codigo",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -151,9 +175,13 @@ namespace Datos.Migrations
                 values: new object[,]
                 {
                     { 1, "Administrador" },
-                    { 2, "Proveedor" },
                     { 3, "Cliente" }
                 });
+
+            migrationBuilder.InsertData(
+                table: "Usuario",
+                columns: new[] { "Correo", "Apellido", "Cedula", "Ciudad", "Direccion", "HashPassword", "Nombre", "RolId", "Telefono" },
+                values: new object[] { "admin123@gmail.com", "", "", "", "", "CD0FD917F8A83A248614BCE69172839D2E06F30D77C6ADBD9DBD693DF6184ABE", "", 1, "" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_DetalleFactura_FacturaId",
@@ -174,6 +202,11 @@ namespace Datos.Migrations
                 name: "IX_Producto_CategoriaId",
                 table: "Producto",
                 column: "CategoriaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Usuario_RolId",
+                table: "Usuario",
+                column: "RolId");
         }
 
         /// <inheritdoc />
@@ -183,7 +216,7 @@ namespace Datos.Migrations
                 name: "DetalleFactura");
 
             migrationBuilder.DropTable(
-                name: "Rol");
+                name: "Proveedor");
 
             migrationBuilder.DropTable(
                 name: "Factura");
@@ -196,6 +229,9 @@ namespace Datos.Migrations
 
             migrationBuilder.DropTable(
                 name: "Categoria");
+
+            migrationBuilder.DropTable(
+                name: "Rol");
         }
     }
 }
