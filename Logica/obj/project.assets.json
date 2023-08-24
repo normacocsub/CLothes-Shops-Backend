@@ -4937,11 +4937,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Logica\\Logica.csproj",
+      "projectUniqueName": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Logica\\Logica.csproj",
       "projectName": "Logica",
-      "projectPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Logica\\Logica.csproj",
+      "projectPath": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Logica\\Logica.csproj",
       "packagesPath": "C:\\Users\\norma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Logica\\obj\\",
+      "outputPath": "c:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\norma\\AppData\\Roaming\\NuGet\\NuGet.Config",
