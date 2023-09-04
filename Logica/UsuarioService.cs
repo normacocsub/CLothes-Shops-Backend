@@ -16,7 +16,7 @@ public class UsuarioService : IUsuarioService
     {
         try
         {
-            var usuarioResponse = _context.Usuarios.Find(usuario.Cedula);
+            var usuarioResponse = _context.Usuarios.Where( usu => usu.Cedula == usuario.Cedula || usu.Correo == usuario.Correo).FirstOrDefault();
             if (usuarioResponse is not null) return null;
             _context.Usuarios.Add(usuario);
             _context.SaveChanges();
