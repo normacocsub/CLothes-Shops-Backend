@@ -17,7 +17,7 @@ public class FacturaService : IFacturaService
         try
         {
             if (factura is null || factura.Cliente is null || _context is null) return null;
-            Usuario usuario = _context.Usuarios.SingleOrDefault(u => u.Correo == factura.Cliente.Correo);
+            Usuario usuario = _context.Usuarios.FirstOrDefault(u => u.Correo == factura.Cliente.Correo);
             if (usuario is null) return null;
             factura.IdCliente = usuario.Cedula;
             factura.Cliente = usuario;

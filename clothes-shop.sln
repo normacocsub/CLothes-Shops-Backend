@@ -3,23 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClotheShops", "ClotheShops\ClotheShops.csproj", "{40DF7096-999D-4733-850D-CCB43282D72A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClotheShops", "ClotheShops\ClotheShops.csproj", "{40DF7096-999D-4733-850D-CCB43282D72A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{297C9CFE-B0E2-4083-AD10-0151B4E0A7A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entity\Entity.csproj", "{297C9CFE-B0E2-4083-AD10-0151B4E0A7A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{00B7B824-B365-472A-8948-66E738636507}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logica", "Logica\Logica.csproj", "{00B7B824-B365-472A-8948-66E738636507}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{B5D5ED1A-EDE3-411E-9C72-24FA83D2073C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datos", "Datos\Datos.csproj", "{B5D5ED1A-EDE3-411E-9C72-24FA83D2073C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestructura", "Infraestructura\Infraestructura.csproj", "{674D5AFB-6ACC-4391-823F-D97F971BCA18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infraestructura", "Infraestructura\Infraestructura.csproj", "{674D5AFB-6ACC-4391-823F-D97F971BCA18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{DB534474-FC53-4684-A216-F07E4C1B6C87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{40DF7096-999D-4733-850D-CCB43282D72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +41,15 @@ Global
 		{674D5AFB-6ACC-4391-823F-D97F971BCA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674D5AFB-6ACC-4391-823F-D97F971BCA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{674D5AFB-6ACC-4391-823F-D97F971BCA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB534474-FC53-4684-A216-F07E4C1B6C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB534474-FC53-4684-A216-F07E4C1B6C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB534474-FC53-4684-A216-F07E4C1B6C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB534474-FC53-4684-A216-F07E4C1B6C87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D689697D-737F-4BE7-B31A-4248B64C9B7D}
 	EndGlobalSection
 EndGlobal

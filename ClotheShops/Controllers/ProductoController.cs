@@ -1,5 +1,6 @@
 using ClotheShops.Models;
 using Entity;
+using Infraestructura;
 using Logica;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,9 +11,11 @@ namespace ClotheShops.Controllers;
 public class ProductoController : ControllerBase
 {
     private readonly IProductoService _producto;
-    public ProductoController(IProductoService producto)
+    private readonly IGoogleDriveService _googleDriveService;
+    public ProductoController(IProductoService producto, IGoogleDriveService googleDrive)
     {
         _producto = producto;
+        _googleDriveService = googleDrive;
     }
 
     [HttpPost]
@@ -26,7 +29,7 @@ public class ProductoController : ControllerBase
             using var memoryStream = new MemoryStream();
             await productoDto.Foto.CopyToAsync(memoryStream);
 
-            var response = await _producto.GuardarProducto(memoryStream, producto);
+            var response = await _producto.GuardarProducto(memoryStream, producto, _googleDriveService);
             return Ok(response);
         }
         return BadRequest();

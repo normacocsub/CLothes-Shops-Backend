@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "dgSpecHash": "MxUfLv6g6nKSGTWjoHWBmtCkchYJ2snRyFSW1tmkr96FrGvpf0c9Fbx4vO9zW44mb3SuitgjFoFlkaBa1RVy4g==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\TestProject\\TestProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\norma\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.5.0\\microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\microsoft.testplatform.testhost\\17.5.0\\microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Entity no es compatible con net6.0 (.NETCoreApp,Version=v6.0). El proyecto Entity admite: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "Entity",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Logica no es compatible con net6.0 (.NETCoreApp,Version=v6.0). El proyecto Logica admite: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "Logica",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Datos no es compatible con net6.0 (.NETCoreApp,Version=v6.0). El proyecto Datos admite: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "Datos",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@ namespace Infraestructura;
 
 
 
-public class GoogleDriveService
+public class GoogleDriveService : IGoogleDriveService
 {
     private readonly DriveService service;
 

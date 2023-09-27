@@ -38,7 +38,7 @@ namespace Logica
         {
             try
             {
-                var proveedorResponse = _context.Proveedors.Where(p => p.NIT == proveedor.NIT);
+                var proveedorResponse = _context.Proveedors.FirstOrDefault(p => p.NIT == proveedor.NIT);
                 if (proveedorResponse is not null) return null;
                 _context.Proveedors.Add(proveedor);
                 _context.SaveChanges();
