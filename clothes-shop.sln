@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datos", "Datos\Datos.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infraestructura", "Infraestructura\Infraestructura.csproj", "{674D5AFB-6ACC-4391-823F-D97F971BCA18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{DB534474-FC53-4684-A216-F07E4C1B6C87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "TestProject1\TestProject1.csproj", "{DB534474-FC53-4684-A216-F07E4C1B6C87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium", "Selenium\Selenium.csproj", "{79032A6E-45C6-43E0-B957-93836F76F35E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DB534474-FC53-4684-A216-F07E4C1B6C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB534474-FC53-4684-A216-F07E4C1B6C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB534474-FC53-4684-A216-F07E4C1B6C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79032A6E-45C6-43E0-B957-93836F76F35E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79032A6E-45C6-43E0-B957-93836F76F35E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79032A6E-45C6-43E0-B957-93836F76F35E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79032A6E-45C6-43E0-B957-93836F76F35E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

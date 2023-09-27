@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "f9yNqzlnHw1waG4wtgqOlMW20aLpnuqLgulL+a/V/vVNrO05zPjWZTSVJa1/1CLGax9xanCVwHaHi+4DbV9F2g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Selenium\\Selenium.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\norma\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\selenium.support\\4.13.1\\selenium.support.4.13.1.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\selenium.webdriver\\4.13.1\\selenium.webdriver.4.13.1.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\selenium.webdriver.chromedriver\\117.0.5938.9200\\selenium.webdriver.chromedriver.117.0.5938.9200.nupkg.sha512",
+    "C:\\Users\\norma\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
