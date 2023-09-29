@@ -40,6 +40,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Selenium.Firefox.WebDriver": {
+              "target": "Package",
+              "version": "[0.27.0, )"
+            },
             "Selenium.Support": {
               "target": "Package",
               "version": "[4.13.1, )"
@@ -51,6 +55,10 @@
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[117.0.5938.9200, )"
+            },
+            "Selenium.WebDriver.MSEdgeDriver": {
+              "target": "Package",
+              "version": "[117.0.2045.35, )"
             }
           },
           "imports": [

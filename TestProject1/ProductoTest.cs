@@ -64,6 +64,45 @@ namespace TestProject1
         }
 
 
+        [Test]
+        public async Task DuplicarProducto()
+        {
+            var imagenStream = new MemoryStream();
+            Producto producto = new()
+            {
+                CategoriaId = 1,
+                Descripcion = "Prueba",
+                Nombre = "Prueba",
+                ProveedorId = "123",
+                UrlImagen = "",
+                Precio = 123444,
+                Stock = 14,
+                Codigo = 1
+            };
+
+            _productoDbSet = GetMockedDbSet(new List<Producto>() { producto } );
+
+            _contextMock.Setup(c => c.Productos).Returns(_productoDbSet);
+            _contextMock.Setup(c => c.Productos.Add(It.IsAny<Producto>())).Verifiable();
+            _contextMock.Setup(c => c.Productos.Update(It.IsAny<Producto>())).Verifiable();
+
+            _googleDriveServiceMock = new Mock<IGoogleDriveService>();
+            _productoService = new ProductoService(_contextMock.Object);
+
+
+            _googleDriveServiceMock.Setup(d => d.CargarImagen(imagenStream, producto.Nombre, It.IsAny<string>()))
+                          .ReturnsAsync("URL de imagen simulada");
+
+            var resultado = await _productoService.GuardarProducto(imagenStream, producto, _googleDriveServiceMock.Object);
+
+            Assert.That(resultado, Is.Null);
+
+            _contextMock.Verify(c => c.Productos.AddAsync(It.IsAny<Producto>(), CancellationToken.None), Times.Never);
+            _contextMock.Verify(c => c.SaveChanges(), Times.Never);
+
+        }
+
+
         private DbSet<T> GetMockedDbSet<T>(List<T> data) where T : class
         {
             var queryableData = data.AsQueryable();

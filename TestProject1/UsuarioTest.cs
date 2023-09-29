@@ -28,6 +28,9 @@ namespace TestProject1
 
             _contextMock.Setup(c => c.Usuarios).Returns(_usuarioDbSet);
             _contextMock.Setup(c => c.Usuarios.Add(It.IsAny<Usuario>())).Verifiable();
+
+            
+
             _contextMock.Setup(c => c.Usuarios.Update(It.IsAny<Usuario>())).Verifiable();
 
             _usuarioService = new UsuarioService(_contextMock.Object);
@@ -56,6 +59,44 @@ namespace TestProject1
 
             _contextMock.Verify(c => c.Usuarios.Add(usuario), Times.Once);
             _contextMock.Verify(c => c.SaveChanges(), Times.Once);
+
+        }
+
+
+        [Test]
+        public void DuplicateUsuario()
+        {
+
+            Usuario usuario = new()
+            {
+                Apellido = "Prueba",
+                Cedula = "33445",
+                Correo = "Prueba@gmail.com",
+                Direccion = "Valledupar",
+                HashPassword = "PruebaHash?*",
+                Nombre = "Prueba",
+                Ciudad = "Valledupar",
+                RolId = 2,
+                Telefono = "3214567891"
+            };
+
+            _usuarioDbSet = GetMockedDbSet(new List<Usuario>() { usuario });
+            _contextMock.Setup(c => c.Usuarios).Returns(_usuarioDbSet);
+            _contextMock.Setup(c => c.Usuarios.Add(It.IsAny<Usuario>())).Verifiable();
+
+
+
+            _contextMock.Setup(c => c.Usuarios.Update(It.IsAny<Usuario>())).Verifiable();
+
+            _usuarioService = new UsuarioService(_contextMock.Object);
+
+
+            Usuario response = _usuarioService.CrearUsuario(usuario);
+
+            Assert.That(response, Is.Null);
+
+            _contextMock.Verify(c => c.Usuarios.Add(usuario), Times.Never);
+            _contextMock.Verify(c => c.SaveChanges(), Times.Never);
 
         }
 

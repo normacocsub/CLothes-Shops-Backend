@@ -1,16 +1,33 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 
-IWebDriver driver = new ChromeDriver();
-driver.Navigate().GoToUrl("http://localhost:3000");
 
-//RegistroProveedor(driver);
-//RegistroUsuario(driver);
-RegistroProducto(driver);
 
-Thread.Sleep(TimeSpan.FromSeconds(5));
-driver.Quit();
+
+List<IWebDriver> navegadores = new()
+{
+    { new ChromeDriver() },
+    { new EdgeDriver() },
+    { new FirefoxDriver() },
+};
+foreach (var item in navegadores)
+{
+    IWebDriver driver = item;
+    driver.Navigate().GoToUrl("http://localhost:3000");
+
+    //RegistroProveedor(driver);
+    //RegistroUsuario(driver);
+    RegistroProducto(driver);
+
+    Thread.Sleep(TimeSpan.FromSeconds(5));
+    driver.Quit();
+}
+
+
+
 
 
 

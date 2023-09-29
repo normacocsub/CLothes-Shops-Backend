@@ -8,9 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.27.0" />
     <PackageReference Include="Selenium.Support" Version="4.13.1" />
     <PackageReference Include="Selenium.WebDriver" Version="4.13.1" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="117.0.5938.9200" />
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="117.0.2045.35" />
   </ItemGroup>
 
 </Project>

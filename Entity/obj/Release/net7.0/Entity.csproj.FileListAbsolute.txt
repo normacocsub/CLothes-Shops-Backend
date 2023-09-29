@@ -1,0 +1,14 @@
+c:\Users\norma\Documents\Clothes-Shops-backend\Entity\bin\Release\net7.0\Entity.deps.json
+c:\Users\norma\Documents\Clothes-Shops-backend\Entity\bin\Release\net7.0\Entity.runtimeconfig.json
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\bin\Release\net7.0\Entity.dll
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\bin\Release\net7.0\Entity.pdb
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\Entity.csproj.AssemblyReference.cache
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\Entity.AssemblyInfoInputs.cache
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\Entity.AssemblyInfo.cs
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\Entity.dll
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\refint\Entity.dll
+C:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\Entity.pdb
+c:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\Entity.genruntimeconfig.cache
+c:\Users\norma\Documents\Clothes-Shops-backend\Entity\obj\Release\net7.0\ref\Entity.dll

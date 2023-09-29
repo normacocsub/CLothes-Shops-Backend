@@ -16,6 +16,10 @@ public class ProductoService : IProductoService
     public async Task<Producto> GuardarProducto(Stream imagenStream, Producto producto, IGoogleDriveService driveService) {
         try
         {
+            var productoResponse = _context.Productos.Where(usu => usu.Codigo ==  producto.Codigo).FirstOrDefault();
+            if (productoResponse is not null) return null;
+
+
             var response = await driveService.CargarImagen(imagenStream, producto.Nombre, "18mJ4wGZdEGOR72GtjpVpLB4SqQ3xXBVK");
             producto.UrlImagen = response;
             await _context.Productos.AddAsync(producto);
