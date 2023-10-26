@@ -10,7 +10,7 @@ namespace ClotheShops.Models
         public int Cantidad { get; set; }
         public decimal PrecioUnitario { get; set; }
         public DateTime Fecha { get; set; }
-        public required int ProductoId { get; set; }
+        public  int ProductoId { get; set; }
         public Producto Producto { get; set; }
     }
 }

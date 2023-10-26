@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "clotheshops",
+  "private_key_id": "0c4cae050f8c9778e69c484ee50ba071129d3c31",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDni/uYnP1/UIFD\nj+KWp2R/t1qH6CNxnIvrCvWWHeKeM/YQEPzy6OJTEbWjMcWkv3dtoUtovOGrzjCM\nQ27a1I5ekf99iWw3FDgy/taP2zvzWGOKBPruNLsgCdXn+qRpNIfkRvP7Wa4bQjO3\nhpZjI+IE0nzj76z+yLBCwqEELtg4rZGVYh/Xsa1idXntF5dnsdN7a2Sf6+nGwmlh\nwSxCbeqsnSAlIJOKiiNtVghQ+2Vu3034xa1WNjtpqR6o4N+LKPTTO+Fr0Rkj04IN\ng4uVJI+pYtzJnQFr7MdedxM7Hm5e5tDbZzUxO3hMdnfMOUReVGuZGi3wUjxDgmYm\nSDe1cZ4pAgMBAAECggEADxHi5T0DeSmqzhRDZ7F7lp3e+iUzSFnLV/f5waROi2Qf\nnc5TPjaGw2gNybIrtkQhYFzc8PNJH0LPUVOyt3KZ1QEczyV2afPKkBQasBhxU45T\nRSh7ke0T6DsHpV5gXLoG5aYyCy/8J0lE3ysW5tsvIsf1yap/2IHEigXLj7+CQlb2\n5WxQh9QhaR49xPcyfTkTJKjKyQv5SUs3XYHu8vC9RZEkAT6kvvg/qyG9WBRrNG+Q\nMRK7E7TBPUm3ZBKoBY56EQLvut8zUPUA42Av+OuBo798azjmbMDkkGFGJgZDnKfr\n2+KzKA08UeXsPrJqiP4LYeSOsmZNFXFyLBIQmKUg8QKBgQD4//mNhdnQSEHQOafP\nwUIFmwwDjpiN4nONyfSu5uj6HmuVcgbhno1agV1XYWbDQwdquUO1wfFQK7H3XMFU\njHB+huaxlRPQbQ1Fr91wYNgWCP02RRJ7R8LtifZ7wUC/RCEcAhnHC+GLCIq/Qxpt\nh0SbbSkD3YArsifdNMtYFaqHeQKBgQDuDmZkJGKBnLtyHJcpeh/eN6STcKn3ulrt\nSO6XEV7cRBOLHJLKK3yq8yoFITMpcik4O629yRSOF15xCOo/puQ86+foyARAcctW\n0Y3tlYOyHGMW9O+dovw9lDPbVMer8YPrCrV6C16w4vJlk2lSpebw2Qm+cOYv0pWI\ni3FTNN8wMQKBgETxi0V2REL5Xs+qxx4tInyu23q4puDSTLB7tLYg1W07swokEmey\nIO1oWFHzdCKokosoVOkklA5gqtwU4KrqX9OIwqN05ZGWQFCFS0jsZ6hiQMogAegE\njKJ8yrSlY6oR0SESK9UDIyX97XzbtZuSEpr+dJbPY8e1gngrQApZpWfxAoGARMli\nasNct2kLfNCoGTMRrEtVwcjHRC7UAUaWso4xY+JD52mNPN/N+TOkS7EpMGutX3NX\nI8TLrLcx8eWKknPt9XCRJWFOYTTAdci9gw417KxpMYP7DQjAbCa7yT+5JoT2Al+o\nyqgoZ2Jcel9bCqenkKaWOzIyQVVPIhJw34MijrECgYBIzUYD8FPpa2xLoJDv6XJF\naiudxAnG2Oug1gIqO7zV/KZAiblwxUY5VmMELYDaT1/FXbNX5v2I0mWEnRV2l7Su\n/MIqwEgdbTX2msInKrINQjgMobs+evI93ezIhPz/22/jmo0uueA/6WlQMn7Og9uh\nmbxoPu3hXBIqdUqSCXNpxQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "adri-20@clotheshops.iam.gserviceaccount.com",
+  "client_id": "117803352322503607622",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/adri-20%40clotheshops.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

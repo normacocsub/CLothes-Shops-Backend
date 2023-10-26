@@ -10,7 +10,7 @@ namespace Entity
     public class Proveedor : Persona
     {
         [Key]
-        public required string NIT { get; set; }
+        public string NIT { get; set; }
 
     }
 }

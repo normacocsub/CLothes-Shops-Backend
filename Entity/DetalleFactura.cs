@@ -13,6 +13,6 @@ public class DetalleFactura
     public decimal PrecioUnitario { get; set; }
     public DateTime Fecha { get; set; }
     [ForeignKey("Producto")]
-    public required int ProductoId { get; set; }
+    public int ProductoId { get; set; }
     public Producto? Producto { get; set; }
 }

@@ -91,3 +91,9 @@ C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\obj\Debug\net7.0\Clot
 C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\obj\Debug\net7.0\ClotheShops.genruntimeconfig.cache
 C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\obj\Debug\net7.0\ref\ClotheShops.dll
 C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\bin\Debug\net7.0\Credenciales\credenciales.json
+C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\bin\Debug\net7.0\publish\web.config
+C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\bin\Debug\net7.0\publish\appsettings.Development.json
+C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\bin\Debug\net7.0\publish\appsettings.json
+C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\bin\Debug\net7.0\publish\ClotheShops.deps.json
+C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\bin\Debug\net7.0\publish\ClotheShops.runtimeconfig.json
+C:\Users\norma\Documents\Clothes-Shops-backend\ClotheShops\bin\Debug\net7.0\publish\Credenciales\credenciales.json

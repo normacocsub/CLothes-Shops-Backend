@@ -9,10 +9,10 @@ public class Factura
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
     public DateTime Fecha { get; set; }
-    public required List<DetalleFactura> Detalles { get; set; }
+    public List<DetalleFactura> Detalles { get; set; }
     public decimal Total { get; set; }
-    public required string Estado { get; set; }
+    public string Estado { get; set; }
     [ForeignKey("Cliente")]
-    public required string IdCliente { get; set; }
+    public string IdCliente { get; set; }
     public Usuario? Cliente { get; set; }
 }

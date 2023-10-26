@@ -2361,7 +2361,7 @@
       },
       "Datos/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Entity": "1.0.0",
           "Infraestructura": "1.0.0",
@@ -2377,7 +2377,7 @@
       },
       "Entity/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/Entity.dll": {}
         },
@@ -2387,7 +2387,7 @@
       },
       "Infraestructura/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Google.Apis.Drive.v3": "1.61.0.3110",
           "Microsoft.AspNetCore": "2.2.0"
@@ -2401,7 +2401,7 @@
       },
       "Logica/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Datos": "1.0.0",
           "Entity": "1.0.0",
