@@ -16,7 +16,7 @@ List<IWebDriver> navegadores = new()
 foreach (var item in navegadores)
 {
     IWebDriver driver = item;
-    driver.Navigate().GoToUrl("http://localhost:3000");
+    driver.Navigate().GoToUrl("https://clothes-shops.vercel.app");
 
     //RegistroProveedor(driver);
     //RegistroUsuario(driver);
