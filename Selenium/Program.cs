@@ -24,6 +24,7 @@ foreach (var item in navegadores)
 
     Thread.Sleep(TimeSpan.FromSeconds(5));
     driver.Quit();
+    Console.WriteLine("Chrome, Edge y Firefox, se han ejecutado correctamente las pruebas de portabilidad.");
 }
 
 
