@@ -12,16 +12,16 @@ services:
       - 80:80
     networks:   
       - onion-app
-  postgresql:
-    image: postgres:latest
+  sql-server:
+    image: mcr.microsoft.com/mssql/server
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Prueba123*
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Prueba123*
     ports:
-      - "5432:5432"
+      - "1433:1433"
     volumes:
-      - postgresql-data:/var/lib/postgresql/data
-    container_name: PostgreSQL
+      - sql-data:/var/opt/mssql
+    container_name: SqlServer
 
 volumes:
-  postgresql-data:
+  sql-data:
