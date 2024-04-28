@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    depends_on:
+      - postgresql
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: TiendaOnion
+    ports:
+      - 80:80
+    networks:   
+      - onion-app
+  postgresql:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Prueba123*
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql-data:/var/lib/postgresql/data
+    container_name: PostgreSQL
+
+volumes:
+  postgresql-data:
