@@ -2438,21 +2438,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj",
+      "projectUniqueName": "C:\\Users\\norma\\CLothes-Shops-Backend\\Infraestructura\\Infraestructura.csproj",
       "projectName": "Infraestructura",
-      "projectPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj",
+      "projectPath": "C:\\Users\\norma\\CLothes-Shops-Backend\\Infraestructura\\Infraestructura.csproj",
       "packagesPath": "C:\\Users\\norma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\obj\\",
+      "outputPath": "C:\\Users\\norma\\CLothes-Shops-Backend\\Infraestructura\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\norma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\norma\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2496,7 +2494,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.421\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VECqefBm5fpRTpUJrm3zzLDr4ilzEYuwtEXgd5k6N/+J76dU0dXXTvxei0Uhd/qV0Oj1lRKq7eh9KTN5Wq6z3g==",
+  "dgSpecHash": "4sGtggXSAT4WQQKfeuKZaKxW8pZfR/AJCaP70HY8htuT8aAA/7nsSCEvHMJ1Fjr6ToSIzwuQsQbdhJ7ewlmH2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Entity\\Entity.csproj",
+  "projectFilePath": "C:\\Users\\norma\\CLothes-Shops-Backend\\Entity\\Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\norma\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\norma\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",

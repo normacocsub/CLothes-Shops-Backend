@@ -13,14 +13,15 @@ COPY ["Datos/", "Datos/"]
 RUN dotnet restore "ClotheShops/ClotheShops.csproj" -r linux-arm64
 COPY . .
 WORKDIR "/src/ClotheShops"
-RUN ls 
 RUN dotnet build "ClotheShops.csproj" -c Release -o /app/build
 
 FROM build AS publish
 WORKDIR "/src/ClotheShops"
 RUN dotnet publish "ClotheShops.csproj" -c Release -o /app/publish
 
+
 FROM base AS final
 WORKDIR /app
+
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ClotheShops.dll"]

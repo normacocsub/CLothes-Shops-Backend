@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pwi7AKAlnGbNqR1OUx1dSgqycUm/d/04F/LZjbM2ct7KuoAySKQMMTIRKM7nbaTeLsOB7BUpiV9lzoASbOeuAw==",
+  "dgSpecHash": "436yGqr/SCh51XhiofXr7pZKuZpO9bl5fVgtyf7ZHFhGZv3Lj0e8pviItkc0SlYXtxTwljB540vDEtLSpiTqcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Logica\\Logica.csproj",
+  "projectFilePath": "C:\\Users\\norma\\CLothes-Shops-Backend\\Logica\\Logica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\norma\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\norma\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

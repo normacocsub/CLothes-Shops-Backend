@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WJ+HV/lZhpZk5ZDgfVQKxSM2MLpGXkfMNkxrqIXjMq/etTEXPl6gTcceAAx5IZtHHabcy/OUJuXUFagIOO+Nww==",
+  "dgSpecHash": "BJsjCxYU3wtnYAj9lZka5Nf2c5Ve53aVBVtcwhGApnQIbB0uu4GpVP0vxtcEfrKRRLzfZhmJ1stjyOtZ2NEo3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\norma\\Documents\\Clothes-Shops-backend\\Infraestructura\\Infraestructura.csproj",
+  "projectFilePath": "C:\\Users\\norma\\CLothes-Shops-Backend\\Infraestructura\\Infraestructura.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\norma\\.nuget\\packages\\google.apis\\1.61.0\\google.apis.1.61.0.nupkg.sha512",
     "C:\\Users\\norma\\.nuget\\packages\\google.apis.auth\\1.61.0\\google.apis.auth.1.61.0.nupkg.sha512",
