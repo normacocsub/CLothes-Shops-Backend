@@ -1,7 +1,7 @@
 "# CLothes-Shops-Backend" 
 "# tienda-online-backend"
 
-dotnet ef migrations add PrimeraMigracion --startup-project ../ClotheShops/ClotheShops.csproj
+dotnet ef migrations add AwsMigracion --startup-project ../ClotheShops/ClotheShops.csproj
 
 dotnet ef database update --startup-project ../ClotheShops/ClotheShops.csproj
 

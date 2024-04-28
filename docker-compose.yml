@@ -1,17 +1,6 @@
 version: '3.8'
 
 services:
-  app:
-    depends_on:
-      - sql-server
-    build: 
-      context: .
-      dockerfile: Dockerfile
-    container_name: TiendaOnion
-    ports:
-      - 80:80
-    networks:   
-      - onion-app
   sql-server:
     image: mcr.microsoft.com/mssql/server
     environment:
